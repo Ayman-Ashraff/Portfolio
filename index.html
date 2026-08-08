@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayman Analyst — Data Analyst Portfolio</title>
+  <meta name="description" content="Ayman Ashraf — Data Analyst specializing in SQL, Python & Data Visualization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Ayman Ashraf</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-right" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="pill-badge">✨ Available for Work</span>
+        <h1>Hello, I'm<br /><span class="hero-name">Ayman Ashraf</span></h1>
+        <p class="hero-sub">Data Analyst | <strong>1 year</strong> of hands-on experience in SQL, Python &amp; Data Visualization</p>
+        <p class="hero-desc">Turning raw data into clear, actionable insights, with a strong foundation in databases and technical problem-solving.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" id="download-resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">View My Work</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:aymanashrafbskk@gmail.com" aria-label="Email" class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-wrap">
+          <div class="profile-photo">
+            <img src="images/profile.png" alt="Ayman Ashraf" />
+          </div>
+          <span class="hire-badge"><span class="hire-dot"></span> Available for hire</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bottom container">
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Year Exp</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+      <a href="#education" class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education</h2>
+        <p>Academic background in computer science and information technology.</p>
+      </div>
+      <div class="edu-list">
+        <article class="edu-card">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-main">
+              <h3>Bachelor of Science, Computer Science</h3>
+              <p class="edu-school">Punjab University College of Information Technology (PUCIT)</p>
+              <p class="edu-meta">CGPA: 3.54 / 4.00</p>
+            </div>
+            <div class="edu-side">
+              <span class="edu-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2021 – 2025
+              </span>
+              <span class="edu-loc">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Lahore, Pakistan
+              </span>
+            </div>
+          </div>
+        </article>
+        <article class="edu-card">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-main">
+              <h3>High School (Matriculation &amp; Intermediate)</h3>
+              <p class="edu-school">Divisional Public School and Inter College</p>
+            </div>
+            <div class="edu-side">
+              <span class="edu-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2019 – 2021
+              </span>
+              <span class="edu-loc">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Sahiwal, Pakistan
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>A selection of projects that demonstrate my expertise in analyzing and visualizing the data.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img">
+            <img src="images/uci-diabetes.png" alt="UCI Diabetes Readmission Prediction dashboard" />
+          </div>
+          <div class="project-body">
+            <h3>UCI Diabetes Readmission Prediction</h3>
+            <p>Built a machine learning model to predict 30-day hospital readmissions using the UCI Diabetes 130-US Hospitals dataset (101,766 records). Trained and evaluated multiple models, with a Random Forest achieving the best performance.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="images/superstore.png" alt="Superstore Profit Analysis dashboard" />
+          </div>
+          <div class="project-body">
+            <h3>Superstore Profit Analysis</h3>
+            <p>Analyzed a Superstore sales dataset using Python and Tableau to uncover where the business was losing money. Found profit dropped sharply at high discount levels, identified the Tables sub-category as a major loss driver, and compared regional profit performance.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="images/london-bike.png" alt="London Bike Sharing Analysis dashboard" />
+          </div>
+          <div class="project-body">
+            <h3>London Bike Sharing Analysis</h3>
+            <p>Analyzed over 5.6 million London bike share rides to uncover ridership trends, including a moving average of ride volume and how temperature and wind speed impact usage patterns.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img project-img-4" role="img" aria-label="Sales and revenue dashboard visualization"></div>
+          <div class="project-body">
+            <h3>Sales &amp; Revenue Dashboard</h3>
+            <p>Built a multi-page Power BI report analyzing sales and revenue performance, featuring treemap, decomposition tree, pie, and trend visuals for interactive business insight.</p>
+            <div class="tag-list">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Data Modeling</span>
+            </div>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+        <p>Comprehensive expertise across modern development stack with focus on scalable web applications and DevOps practices.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">C#</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <h3>Data Analysis &amp; Visualization</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Power BI</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <h3>Databases</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">SQL Server</span>
+            <span class="tag">Database Schema Design</span>
+            <span class="tag">Building &amp; Structuring Tables</span>
+            <span class="tag">CRUD Operations</span>
+            <span class="tag">Normalization</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <h3>Tools</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Excel</span>
+            <span class="tag">Jupyter Notebook</span>
+            <span class="tag">Git</span>
+            <span class="tag">DAX</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <h3>Web</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">WordPress</span>
+            <span class="tag">.NET</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Experience</h2>
+        <p>Hands-on experience across data analysis, database development, and technical support — from visualizing data to teaching database fundamentals.</p>
+      </div>
+      <div class="exp-list">
+        <article class="exp-card">
+          <div class="exp-top">
+            <div class="exp-left">
+              <div class="exp-title-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <h3>WordPress Website Project Volunteer</h3>
+              </div>
+              <p class="exp-company">Stockton Digital Nest | Stockton, CA</p>
+            </div>
+            <span class="exp-date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              June 2026 – August 2026
+            </span>
+          </div>
+          <p class="exp-desc">Built a custom submission form and a page with multiple content sections. Installed and configured plugins to extend site functionality.</p>
+        </article>
+        <article class="exp-card">
+          <div class="exp-top">
+            <div class="exp-left">
+              <div class="exp-title-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <h3>Software Development Intern (Operations &amp; Data Support)</h3>
+              </div>
+              <p class="exp-company">Nano Byte Technologies | Lahore, Pakistan (HQ: Sacramento)</p>
+            </div>
+            <span class="exp-date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Mar 2025 – Jun 2025
+            </span>
+          </div>
+          <p class="exp-desc">Built 4–5 full-stack web applications in .NET, each backed by a relational database of 3+ SQL tables. Wrote raw SQL for core CRUD operations.</p>
+        </article>
+        <article class="exp-card">
+          <div class="exp-top">
+            <div class="exp-left">
+              <div class="exp-title-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <h3>Teaching Assistant, Database Management</h3>
+              </div>
+              <p class="exp-company">PUCIT | Lahore, Pakistan</p>
+            </div>
+            <span class="exp-date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Sept 2024 – Jan 2025
+            </span>
+          </div>
+          <p class="exp-desc">Instructed and evaluated 50+ students on SQL query writing, database design, and normalization principles.</p>
+        </article>
+        <article class="exp-card">
+          <div class="exp-top">
+            <div class="exp-left">
+              <div class="exp-title-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <h3>Campus Ambassador</h3>
+              </div>
+              <p class="exp-company">Lumovy Technology Solutions | Lahore, Pakistan</p>
+            </div>
+            <span class="exp-date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              2023 – 2024
+            </span>
+          </div>
+          <p class="exp-desc">Represented the company on campus, attending AI-focused events to support student engagement with company initiatives.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Let's Work Together</h2>
+        <p>Ready to bring your next project to life? Let's discuss how my expertise in data analysis and visualization can help achieve your goals.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:aymanashrafbskk@gmail.com" class="info-card">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="info-label">Email</span>
+              <span class="info-value">aymanashrafbskk@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+13502492214" class="info-card">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="info-label">Phone</span>
+              <span class="info-value">+1 (350) 249-2214</span>
+            </div>
+          </a>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="info-label">Location</span>
+              <span class="info-value">California</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="sr-only">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="sr-only">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Your Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-brand">Ayman Analyst</p>
+      <p class="footer-tagline">Data Analyst | SQL, Python &amp; Data Visualization</p>
+      <p class="footer-copy">&copy; 2026 Ayman Analyst. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
